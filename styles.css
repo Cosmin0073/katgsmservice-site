@@ -49,7 +49,15 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* NAVIGAȚIE MOBILĂ */
+/* NAVIGAȚIE MOBILĂ - Adăugare meniu burger */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -63,8 +71,17 @@ nav ul li a {
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.active ul {
+        display: flex;
     }
 }
 
@@ -91,15 +108,17 @@ section {
     }
 
     .service-box {
-        width: 90%;
+        width: 95%;
         margin-bottom: 20px;
+        padding: 10px;
     }
 }
 
 /* CTA BUTTONS RESPONSIVE */
 .cta-button {
     display: block;
-    width: 80%;
+    width: 90%;
+    max-width: 280px;
     margin: 20px auto;
     text-align: center;
     padding: 15px;
