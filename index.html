@@ -25,12 +25,14 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .header h1 {
-            color: #000000;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
         .logo img {
-            width: 120px; /* Mărește dimensiunea logo-ului */
+            width: 120px;
             height: auto;
         }
 
@@ -63,56 +65,31 @@
             border-radius: 10px;
         }
 
-        .display-banner {
-            width: 80%;
-            max-width: 600px;
-            margin: 30px auto;
-            display: block;
-            border-radius: 10px;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            background: #f5f5f5;
-            border-radius: 10px;
-            margin: 40px auto;
-            max-width: 1000px;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .about-section img {
-            width: 80%;
-            max-width: 500px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .header nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .header nav ul li {
-            display: inline;
-        }
-
-        .header nav ul li a {
-            color: #000000;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
         footer {
             background: #ffffff;
             color: #000000;
             padding: 15px;
             text-align: center;
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -122,13 +99,6 @@
             <img src="img/logo.png" alt="KAT GSM Logo">
             <h1>KAT GSM Service</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="about.html">📖 Despre Noi</a></li>
-                <li><a href="#contact">📩 Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section class="service-container">
@@ -158,17 +128,9 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contactează-ne</h2>
-        <p>📍 Oradea, România</p>
-        <p>📞 <a href="tel:+40747401953">+40 747 401 953</a></p>
-        <p>📩 <a href="mailto:contact@katgsm.ro">contact@katgsm.ro</a></p>
-        <a href="https://wa.me/40747401953" class="cta-button">📲 Scrie-ne pe WhatsApp</a>
-    </section>
-
     <footer>
         <p>&copy; 2025 KAT GSM - Toate drepturile rezervate.</p>
+        <a href="https://wa.me/40747401953" class="whatsapp-button">📲 Scrie-ne pe WhatsApp</a>
     </footer>
 </body>
 </html>
-
