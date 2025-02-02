@@ -3,74 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAT GSM Service - Service GSM Oradea</title>
-    <meta name="description" content="Service GSM profesionist în Oradea. Reparăm rapid telefoane iPhone, schimbăm display-uri, baterii și multe altele!">
-    
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <title>KAT GSM - Service GSM Oradea</title>
+    <meta name="description" content="KAT GSM - Service profesional pentru telefoane în Oradea. Reparăm ecrane, baterii, camere și carcase iPhone rapid și eficient!">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>KAT GSM - Service GSM Oradea</h1>
+        <p>Reparații rapide și profesionale pentru iPhone și alte telefoane</p>
+        <a href="tel:+40712345678" class="cta-button">Sună acum</a>
+    </header>
 
-    <!-- Navbar corectat -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo.png" alt="KAT GSM Service Logo" class="logo"> 
-                <span class="ms-2">KAT GSM Service</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Acasă</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Servicii</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <section id="servicii">
+        <h2>Serviciile Noastre</h2>
+        <ul>
+            <li> Schimb display iPhone</li>
+            <li> Înlocuire baterie</li>
+            <li> Reparare cameră</li>
+            <li> Reparații carcasă & capac</li>
+        </ul>
+    </section>
 
-    <main class="container mt-5 pt-5">
-        <header class="text-center p-4">
-            <h1 class="display-6">Bun venit la KAT GSM Service</h1>
-        </header>
+    <section id="contact">
+        <h2>Contactează-ne</h2>
+        <p>📍 Oradea, România</p>
+        <p>📞 <a href="tel:+40747401953">+40 747 401 953</a></p>
+        <p>📩 <a href="mailto:contact@katgsm.ro">cosmin.tarcaet@yahoo.com
+    
+        </a></p>
+        
+        <form action="#" method="post">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Trimite</button>
+        </form>
+        
+        <a href="https://wa.me/40747401953" class="cta-button">📲 Scrie-ne pe WhatsApp</a>
+    </section>
 
-        <section class="service-container">
-            <div class="service-box" onclick="window.location.href='display.html'">
-                <img src="img/display-repair.jpg" alt="Schimb Display">
-                <h3>📱 Schimb Display</h3>
-            </div>
-            <div class="service-box" onclick="window.location.href='baterie.html'">
-                <img src="img/battery-repair.jpg" alt="Înlocuire Baterie">
-                <h3>🔋 Înlocuire Baterie</h3>
-            </div>
-            <div class="service-box" onclick="window.location.href='camera.html'">
-                <img src="img/camera-repair.jpg" alt="Reparare Cameră">
-                <h3>📷 Reparare Cameră</h3>
-            </div>
-            <div class="service-box" onclick="window.location.href='capac-spate.html'">
-                <img src="img/back-cover-repair.jpg" alt="Înlocuire Capac Spate">
-                <h3>🔧 Înlocuire Capac Spate</h3>
-            </div>
-            <div class="service-box" onclick="window.location.href='carcasa.html'">
-                <img src="img/case-repair.jpg" alt="Reparație Carcasă">
-                <h3>🛠️ Reparație Carcasă</h3>
-            </div>
-            <div class="service-box" onclick="window.location.href='difuzor-casca.html'">
-                <img src="img/speaker-repair.jpg" alt="Reparație Difuzor & Cască">
-                <h3>🔊 Reparație Difuzor & Cască</h3>
-            </div>
-        </section>
-    </main>
-
-    <footer class="text-center p-3 mt-4">
-        <p>&copy; 2025 KAT GSM Service - Toate drepturile rezervate.</p>
-        <a href="https://wa.me/40747401953" class="whatsapp-button">📲 Scrie-ne pe WhatsApp</a>
+    <footer>
+        <p>&copy; 2025 KAT GSM - Toate drepturile rezervate.</p>
     </footer>
-
 </body>
 </html>
