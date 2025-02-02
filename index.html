@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAT GSM - Service GSM Oradea</title>
+    <meta name="description" content="Service GSM profesionist în Oradea. Reparăm rapid telefoane iPhone, schimbăm display-uri, baterii și multe altele!">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .header {
+            background: #ffffff;
+            color: #000000;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #000000;
+        }
+
+        .logo img {
+            width: 120px; /* Mărește dimensiunea logo-ului */
+            height: auto;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .service-box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            width: 250px;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        .service-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .display-banner {
+            width: 80%;
+            max-width: 600px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background: #f5f5f5;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 1000px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .header nav ul li {
+            display: inline;
+        }
+
+        .header nav ul li a {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #ffffff;
+            color: #000000;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="KAT GSM Logo">
+            <h1>KAT GSM Service</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="about.html">📖 Despre Noi</a></li>
+                <li><a href="#contact">📩 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="service-container">
+        <div class="service-box" onclick="window.location.href='display.html'">
+            <img src="img/display-repair.jpg" alt="Schimb Display">
+            <h3>📱 Schimb Display</h3>
+        </div>
+        <div class="service-box" onclick="window.location.href='baterie.html'">
+            <img src="img/battery-repair.jpg" alt="Înlocuire Baterie">
+            <h3>🔋 Înlocuire Baterie</h3>
+        </div>
+        <div class="service-box" onclick="window.location.href='camera.html'">
+            <img src="img/camera-repair.jpg" alt="Reparare Cameră">
+            <h3>📷 Reparare Cameră</h3>
+        </div>
+        <div class="service-box" onclick="window.location.href='capac-spate.html'">
+            <img src="img/back-cover-repair.jpg" alt="Înlocuire Capac Spate">
+            <h3>🔧 Înlocuire Capac Spate</h3>
+        </div>
+        <div class="service-box" onclick="window.location.href='carcasa.html'">
+            <img src="img/case-repair.jpg" alt="Reparație Carcasă">
+            <h3>🛠️ Reparație Carcasă</h3>
+        </div>
+        <div class="service-box" onclick="window.location.href='difuzor-casca.html'">
+            <img src="img/speaker-repair.jpg" alt="Reparație Difuzor & Cască">
+            <h3>🔊 Reparație Difuzor & Cască</h3>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactează-ne</h2>
+        <p>📍 Oradea, România</p>
+        <p>📞 <a href="tel:+40747401953">+40 747 401 953</a></p>
+        <p>📩 <a href="mailto:contact@katgsm.ro">contact@katgsm.ro</a></p>
+        <a href="https://wa.me/40747401953" class="cta-button">📲 Scrie-ne pe WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 KAT GSM - Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
+
